@@ -101,6 +101,24 @@ const LightThemeColors = [
       },
     },
   },
+
+  {
+    name: 'MATECREW_Theme',
+    palette: {
+      primary: {
+        main: '#28A745', // verde principal (matecrew)
+        light: '#E6F4EA', // verde muy claro para fondos
+        dark: '#1E7E34', // verde oscuro para hover/active
+        contrastText: '#ffffff',
+      },
+      secondary: {
+        main: '#20C997', // verde agua complementario
+        light: '#D9F8F2', // verde agua claro para fondos
+        dark: '#0FA37F', // verde agua más intenso
+        contrastText: '#ffffff',
+      },
+    },
+  },
 ];
 
 export { LightThemeColors };
