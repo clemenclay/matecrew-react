@@ -10,17 +10,17 @@ function setLang(code) {
 }
 function getLang() { return localStorage.getItem('lang') || 'en'; }
 
-function Topbar() {
-  return (
-    <div className="topbar-image bg-primary py-1 rounded-0 mb-0 alert alert-dismissible fade show" role="alert">
-      <div className="d-flex justify-content-center gap-sm-3 gap-2 align-items-center text-center flex-md-nowrap flex-wrap">
-        <span className="badge bg-white bg-opacity-10 fs-2 fw-bolder px-2">New</span>
-        <p className="mb-0 text-white fw-bold">Frontend Pages Included!</p>
-      </div>
-      <button type="button" className="btn-close btn-close-white p-2 fs-2" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  );
-}
+// function Topbar() {
+//   return (
+//     <div className="topbar-image bg-primary py-1 rounded-0 mb-0 alert alert-dismissible fade show" role="alert">
+//       <div className="d-flex justify-content-center gap-sm-3 gap-2 align-items-center text-center flex-md-nowrap flex-wrap">
+//         <span className="badge bg-white bg-opacity-10 fs-2 fw-bolder px-2">New</span>
+//         <p className="mb-0 text-white fw-bold">Frontend Pages Included!</p>
+//       </div>
+//       <button type="button" className="btn-close btn-close-white p-2 fs-2" data-bs-dismiss="alert" aria-label="Close"></button>
+//     </div>
+//   );
+// }
 
 function Footer() {
   return (

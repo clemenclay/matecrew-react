@@ -16,6 +16,11 @@ export default function Home() {
       <div className="container-fluid text-center">
         <h1 className="fw-bolder fs-12">Welcome</h1>
         <p className="text-primary fs-4 fw-bolder mb-0">This is the Home</p>
+        <img 
+          src="/assets/images/frontend-pages/matecota.jpeg" 
+          alt="Matecota" 
+          style={{ width: '300px', height: 'auto', marginTop: '20px', borderRadius: '8px' }} 
+        />
       </div>
     </section>
   );
