@@ -1,0 +1,1 @@
+Copia aquí la carpeta 'assets' del template HTML (css, js, libs, images, ...).

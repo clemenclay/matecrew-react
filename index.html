@@ -1,50 +1,29 @@
 <!doctype html>
 <html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="MATECREW_THEME" data-layout="vertical"
   data-boxed-layout="boxed" data-card="shadow">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logoIcon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modernize Vite + React (Light)</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/logoIcon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modernize Vite + React</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <body>
+    <div id="root"></div>
 
-  <!-- CSS del template -->
-  <link rel="stylesheet" href="/assets/css/styles.css" />
-  <link rel="stylesheet" href="/assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
-</head>
+    <!-- jQuery (CDN directo para evitar 404 si no está en /assets) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
 
-<body>
-  <div id="root"></div>
+    <!-- Plugins que suelen existir en public/assets (ajusta si tu ruta difiere) -->
+    <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="/assets/libs/simplebar/dist/simplebar.min.js" defer></script>
+    <script src="/assets/libs/owl.carousel/dist/owl.carousel.min.js" defer></script>
 
-  <!-- jQuery (local con fallback a CDN) -->
-  <script src="/assets/libs/jquery/dist/jquery.min.js"
-    onerror="(function(){var s=document.createElement('script');s.src='https://code.jquery.com/jquery-3.7.1.min.js';s.crossOrigin='anonymous';document.head.appendChild(s);}())">
-    </script>
-
-  <!-- JS del template -->
-  <script src="/assets/js/vendor.min.js" defer></script>
-  <script src="/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="/assets/libs/simplebar/dist/simplebar.min.js" defer></script>
-  <script src="/assets/libs/owl.carousel/dist/owl.carousel.min.js" defer></script>
-
-  <!-- Theme (se deben tener estos archivos en /public/assets/js/theme/) -->
-  <script src="/assets/js/theme/app.init.js" defer></script>
-  <script src="/assets/js/theme/theme.js" defer></script>
-  <script src="/assets/js/theme/app.min.js" defer></script>
-
-  <!-- Iconify -->
-  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js" defer></script>
-
-  <!-- NOTA: homepage.js se inyecta solo en la Home desde src/views/frontend/Home.jsx -->
-  <!-- <script src="/assets/js/frontend-landingpage/homepage.js"></script> -->
-
-  <!-- App React (al final para que los plugins ya estén disponibles) -->
-  <script type="module" src="/src/main.jsx"></script>
-
-  <script> const global = globalThis; </script>
-</body>
-
+    <!-- App React -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
